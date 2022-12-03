@@ -1,3 +1,5 @@
+// https://adventofcode.com/2022/day/2
+
 const fs = require('fs')
 const path = require('path')
 
@@ -10,7 +12,7 @@ const points = {
   lose: 0,
 }
 
-var lines = fs
+const lines = fs
   .readFileSync(path.resolve(__dirname, "./input.txt"))
   .toString()
   .replaceAll("A", "rock").replaceAll("B", "paper").replaceAll("C", "scissors")
